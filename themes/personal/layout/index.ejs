@@ -1,46 +1,185 @@
   <!-- Header -->
-    <header>
+    <header id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h1 class="front">Welcome to Hexo Personal Theme</h1>
-					<h4 class="front">Great theme that fit your needs</h4>
-					<a class="btn btn-default" style="margin: 20px;" href="#">Download Now</a>
+                <div class="col-lg-12">
+                    <h1 class="front">Optimal Statistical Consulting</h1>
+					<h4 class="front">Optimal Statistical Consulting (established in 2016) is here to help you with all of your scientific study needs including: study design and documentation, data cleaning and analysis, data visualization and interpretation, and preparing study findings for presentations at scientific meetings and journal publications. </h4>
+					<h4 class="front">We also offer reduced rates for students. Contact us for a quote! 
+					</h4>
                 </div>
             </div>
          </div>
-    </header>
+	</header>
+	
+	<section class="landing">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2 class="black">We have specific expertise in:</h2>
+				</div>
+				
+				<div class="row text-left">
+                    <div class="col-md-4">
+						<h4 class="text">Study design</h4>
+						<h4 class="text">Sampling methods</h4>
+						<h4 class="text">Analysis of variation (ANOVA)</h4>
+						<h4 class="text">Chi-square</h4>
+						<h4 class="text">Correlation</h4>
 
-	   
-	<section class="jekyll">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 text-center">
-						<h2 class="black">Recent Posts</h2>
-					</div>
-					<div class="col-lg-12">
-						<div class="recent-blog">
-						<% if (site.posts.length){ %>
-						  <div class="widget-wrap">
-							<div class="widget">
-							  <div class="recent-homepage">
-								<% site.posts.sort('date', -1).limit(4).each(function(post){ %>
-								  <div class="col-md-3">
-									<a class="recent" href="<%- url_for(post.path) %>"><%= post.title || '(no title)' %></a>
-									<div class="post-excerpt-front"><%- post.excerpt %></div>
-									<a class="readmore" href="<%- url_for(post.path) %>"><%= theme.excerpt_link %></a> <i class="fa fa-angle-right" aria-hidden="true"></i>
-								  </div>
-								<% }) %>	
-							  </div>
-							</div>
-						  </div>
-						<% } %>
-						</div>
-					</div>
-					<div class="col-lg-12 text-center" style="margin-top: 20px;">
-						<a class="btn btn-default readall" href="/categories/blog">Read all blog</a>
+                    </div>
+                    <div class="col-md-4">
+						<h4 class="text">Linear regression </h4>
+						<h4 class="text">Logistic regression </h4>
+						<h4 class="text">Multivariable analysis</h4>
+						<h4 class="text">Multivariate analysis </h4>
+						<h4 class="text">Interaction/moderation analysis </h4>
+						<h4 class="text">Mediation analysis/SEM</h4>
+                    </div>
+                    <div class="col-md-4">
+						<h4 class="text">Multiple imputation/missing variables</h4>
+						<h4 class="text">Mixed effects models</h4>
+						<h4 class="text">Power analysis/sample size calculation</h4>
+						<h4 class="text">Bootstrap statistics</h4>
+						<h4 class="text">Generalized additive model and splines</h4>
+						<h4 class="text">Trend analysis </h4>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</section>
+
+	<section class="landing">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2 class="black">Our software knowledge base includes:</h2>
+					
+				</div>
+				
+			</div>
+			<div class="row text-center">
+				<div class="col-xs-4 col-md-6">
+					<h4>SAS</h4>
+					<h4>SPSS</h4>
+				</div>
+				<div class="col-xs-4 col-md-6">
+					<h4>R</h4>
+					<h4>Excel </h4>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="page-section bg-light" id="team">
+		<div class="container">
+			<div class="text-center">
+				<h2 class="section-heading text-uppercase">Our team</h2>
+				
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="team-member">
+						<img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="" />
+						<h4>Thiru Kanagasabai, PhD</h4>
+						<p class="text-muted">Education</p>
+						<p class="text">Postdoctoral Fellowship, McGill University, School of Population and Global Health (Environmental Epidemiology)</p>
+						<p class="text">PhD, York University, School of Kinesiology and Health Science (Behavioural and Nutritional Epidemiology)</p>
+						<p class="text">MSc, University of Toronto (St. George), Departments of Pharmaceutical Sciences, and Pharmacology and Toxicology (Molecular Toxicology)</p>
+						<p class="text">HBSc, University of Toronto (St. George), Department of Pharmacology and Toxicology (Toxicology Specialist)</p>
+						<p class="text-muted">Research expertise</p>
+						<p class="text">
+						Cardio-vascular-renal and -metabolic diseases<br>
+						Air pollution<br>
+						Sleep behaviours<br>
+						Physical activity and sedentary behaviours<br>
+						Micronutrient antioxidants, inflammation and oxidative stress<br>
+						Population health from cross-cultural and global contexts<br>
+					</p>
 					</div>
 				</div>
-				<hr>
+				<div class="col-lg-4">
+					<div class="team-member">
+						<img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="" />
+						<h4>Sarah Heinzle, MSc</h4>
+						<p class="text-muted">Education</p>
+						<p class="text">MSc, York University, School of Kinesiology and Health Science (Epidemiology of cardiometabolic risk factors)</p>
+						<p class="text">HBSc, Carleton University, Integrated Science: Concentration Health Science, Minor Psychology</p>
+						<p class="text-muted">Research Expertise</p>
+						<p class="text">
+							Cardiometabolic risk factors <br>
+							Insulin-resistance<br>
+							Chronic low-grade inflammation<br>
+							Metabolic syndrome<br>
+							Pediatric obesity<br>
+
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="team-member">
+						<img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="" />
+						<h4>Mahsa Haghighi, MSc</h4>
+						<p class="text-muted">Education</p>
+						<p class="text">MSc, York University, School of Kinesiology and Health Science (Epidemiology of cardiometabolic risk factors)</p>
+						<p class="text">BSc, York University (Psychology)</p>
+						<p class="text-muted">Research Expertise</p>
+						<p class="text">
+							Cardiometabolic risk factors <br>
+							Pesticide exposure (organophosphates) <br> 
+							and Environmental pollutants (polycyclic aromatic hydrocarbons) as it relates to cardiometabolic health <br>
+							Programmatic assessment <br>
+							Medical education in Canada 
+
+						</p>
+					</div>
+				</div>
 			</div>
+		</div>
+	</section>
+	   
+	<section class="services" id="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2 class="black">Our services</h2>
+					
+				</div>
+				
+			</div>
+			<div class="row text-left">
+				<div class="col-xs-4 col-md-6">
+					<h4 class="text">Data cleaning</h4>
+					<h4 class="text">Codebook creation</h4>
+					<h4 class="text">Data management</h4>
+					<h4 class="text">Data analysis </h4>
+					<ul class="list">
+						<li>Consultation related to statistical approaches and modelling</li>
+						<li>Statistical analysis and data visualization</li>
+						<li>Interpretation of results</li>
+					</ul>
+					
+				</div>
+				<div class="col-xs-4 col-md-6">
+					<h4>Editing documents 
+						(scientific papers, reports, REB documents, proposals, slides, etc.)</h4>
+					<h4>Creation of presentation slides and posters</h4>
+					<h4>Workshops on study design, statistical methods, and analytical software (one-on-one and groups)</h4>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="services" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2 class="black">Contact us</h2>
+					<h4>E-mail: optimalstatisticalconsulting@gmail.com</h4>
+					
+				</div>
+				
+			</div>
+		</div>
 	</section>

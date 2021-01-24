@@ -10,7 +10,8 @@
 
 body {
     overflow-x: hidden;
-	color: #4a4949;
+    color: #4a4949;
+ 
 }
 header {
 	padding: 150px 0px 100px 0px;
@@ -20,7 +21,20 @@ header {
     background-image: -moz-linear-gradient(right,#0093ff,#10c4e5);
     background-image: linear-gradient(right,#0093ff,#10c4e5);
 }
-
+h1, h2, h3, h4, h5 {
+    line-height: 1.8;
+}
+.software {
+    background-color: beige;
+    padding: 50px;
+}
+.services {
+    background-color: #f7f7f7;
+}
+.headline {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 h1.article-title {
 	color: #fff;
 }

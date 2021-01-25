@@ -1,0 +1,111 @@
+  <!-- Footer -->
+    <footer class="text-left">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h4>About us
+                        </h4>
+                        <p class="white">Optimal Statistical Consulting (established in 2016) is here to help you with all of your scientific study needs including: study design and documentation, data cleaning and analysis, data visualization and interpretation, and preparing study findings for presentations at scientific meetings and journal publications. </p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h4>Services
+                        </h4>
+                        <ul class="list">
+							<li>Data cleaning</li>
+                            <li>Codebook creation</li>
+                            <li>Data management</li>
+                            <li>Data analysis</li>
+                            <li>Editing documents</li>
+                            <li>Creation of presentation slides and posters</li>
+                            <li>Workshops</li>
+							
+						</ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h4>Contact
+                        </h4>
+                        <p class="white">E-mail: optimalstatisticalconsulting@gmail.com                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-6">
+                        <p class="copyright">Copyright &copy; 2016 - <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>  | All Rights Reserved. </p>
+                    </div>
+                    <div class="col-lg-5 col-md-6 text-right">
+                        <p class="developed" >Developed by <a href="http://www.airraya.com" target="_blank">AIR RAYA GROUP</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</script>
+
+    <!-- jQuery -->
+	<%- js('javascript/jquery.js') %>
+
+    <!-- Bootstrap Core JavaScript -->
+	<%- js('javascript/bootstrap.min.js') %>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+	
+	<!-- Scroll to Top Button -->
+	<button href="#top" id="backToTopBtn" class="btn btn-md scroll"><span class="glyphicon glyphicon-chevron-up"></span></button>
+	  <script>
+	  $('#backToTopBtn').click(function(){
+			$('html,body').animate({scrollTop:0},'slow');return false;
+		});
+   </script>
+      <script>
+   $(document).ready(function(){
+	
+	//Check to see if the window is top if not then display button
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scroll').fadeIn();
+		} else {
+			$('.scroll').fadeOut();
+		}
+	});
+	
+	//Click event to scroll to top
+	$('.scroll').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+	
+});
+   </script>
+
+
+
+
+<% if (config.disqus_shortname){ %>
+<script>
+  var disqus_shortname = '<%= config.disqus_shortname %>';
+  <% if (page.permalink){ %>
+  var disqus_url = '<%= page.permalink %>';
+  <% } %>
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/<% if (page.comments) { %>embed.js<% } else { %>count.js<% } %>';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<% } %>
+
+<% if (theme.fancybox){ %>
+  <%- css('fancybox/jquery.fancybox') %>
+  <%- js('fancybox/jquery.fancybox.pack') %>
+<% } %>
+
+<%- js('js/script') %>

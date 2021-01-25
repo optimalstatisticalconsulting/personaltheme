@@ -1,0 +1,60 @@
+	<header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="front">Blog</h1>
+                </div>
+            </div>
+         </div>
+    </header>
+
+					<!-- Main content -->
+		<section id="blog">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8">	
+						<% if (pagination == 2){ %>
+						  <% page.posts.each(function(post){ %>
+							<%- partial('article', {post: post, index: true}) %>
+						  <% }) %>
+						<% } else { %>
+						  <% var last; %>
+						  <% page.posts.each(function(post, i){ %>
+							<% var year = post.date.year(); %>
+							<% if (last != year){ %>
+							  <% if (last != null){ %>
+								</div></section>
+							  <% } %>
+							  <% last = year; %>
+							  <section class="archives-wrap">
+								
+								<div class="archives">
+							<% } %>
+					</div>
+					<div class="col-lg-12 blogpost">	
+					
+							<%- partial('archive-post', {post: post, even: i % 2 == 0}) %>
+						  <% }) %>
+						  <% if (page.posts.length){ %>
+							</div></section>
+						  <% } %>
+						<% } %>
+						<% if (page.total > 1){ %>
+						  <div class="pagination">
+							<%- paginator({
+							  prev_text: "&laquo; .... Prev",
+							  next_text: ".... Next &raquo;"
+							}) %>
+						  </div>
+						<% } %>
+					</div>
+					<div class="col-lg-4">
+								<% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
+								<%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+								<% } %>
+				
+					</div>
+				<div>
+			</div>
+		</section>
+

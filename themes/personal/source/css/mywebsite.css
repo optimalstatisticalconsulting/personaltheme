@@ -13,23 +13,55 @@ body {
     color: #4a4949;
  
 }
+.navbar-default .navbar-nav > li > a {
+    color: #000;
+}
+.navbar-default .navbar-brand {
+    color: #000;
+}
+section#blog {
+    margin-bottom: 30px;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: transparent;
+}
 header {
-	padding: 150px 0px 100px 0px;
-	background: #10c4e5;
-	background-image: -webkit-linear-gradient(right,#0093ff,#10c4e5);
-    background-image: -o-linear-gradient(right,#0093ff,#10c4e5);
-    background-image: -moz-linear-gradient(right,#0093ff,#10c4e5);
-    background-image: linear-gradient(right,#0093ff,#10c4e5);
+	padding: 150px 10px 100px 10px;
+	background: #b23200;
+	background-image: -webkit-linear-gradient(right,#fe8900,#b23200);
+    background-image: -o-linear-gradient(right,#fe8900,#b23200);
+    background-image: -moz-linear-gradient(right,#fe8900,#b23200);
+    background-image: linear-gradient(right,#fe8900,#b23200);
+}
+p.developed {
+    color: #fff;
 }
 h1, h2, h3, h4, h5 {
     line-height: 1.8;
 }
+p.copyright {
+    color: #fff;
+}
 .software {
-    background-color: beige;
+    background-color: #fff0e4;
     padding: 50px;
 }
-.services {
-    background-color: #f7f7f7;
+section.landing {
+    margin-bottom: 30px;
+    padding: 30px;
+}
+section.ourteam {
+    margin-bottom: 30px;
+    padding: 20px;
+}
+section.contactus {
+    margin-bottom: 30px;
+    padding: 20px;
+}
+section.ourservices {
+    margin-bottom: 30px;
+    background-color: #fff4e9;
+    padding: 20px;
 }
 .headline {
     margin-top: 50px;
@@ -99,40 +131,52 @@ a.recent {
     border-color: #e6d40e;
 }
 .navbar-default {
-    background-color: #f0cd0e;
+    background-color: #fff;
 }
 .footer-above {
-	background: #0093ff;
+	background: #913600;
+    background-image: none;
+    background-image: -webkit-linear-gradient(right,#ff8a00,#913600);
+    background-image: -o-linear-gradient(right,#ff8a00,#913600);
+    background-image: -moz-linear-gradient(right,#ff8a00,#913600);
+    background-image: linear-gradient(right,#ff8a00,#913600);
 	color: #fff;
-	padding: 40px 0px 40px 0px;
+	padding: 40px 10px 40px 10px;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: #06a4f6;
+    color: #b25800;
     background-color: transparent;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-    color: #06a4f6;
+    color: #b25800;
     background-color: transparent;
 }
 .label-default {
     background-color: #f0cd0e;
 }
 a {
-    color: #06a5f6;
+    color: #b25800;
     text-decoration: none;
 }
+a:hover {
+    color: #ff8100;
+}
+a:focus {
+    color: #ff8100;
+}
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #0dbce9;
+    background-color: #b25800;
 }
 .navbar-default .navbar-toggle {
-    border-color: #fff;
+    border-color: #b25800;
+    background-color: #b25800;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    border-color: #0dbce9;
+    border-color: #b25800;
 }
 .footer-below {
-	background: #fff;
-	color: #18181a;
+	background: #643100;
+	color: #fff;
 	padding: 20px 0px 5px 0px;
 }
 #backToTopBtn {

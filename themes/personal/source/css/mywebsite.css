@@ -62,7 +62,7 @@ p.copyright {
     color: #fff;
 }
 .software {
-    background-color: #fff0e4;
+    background-color: #f5f6f7;
     padding: 50px;
 }
 section.landing {
@@ -79,7 +79,7 @@ section.contactus {
 }
 section.ourservices {
     margin-bottom: 30px;
-    background-color: #fff4e9;
+    background-color: #f8f7f7;
     padding: 20px;
 }
 .headline {
@@ -123,7 +123,7 @@ img.about {
 	margin-top: 20px;
 }
 aside#sidebar {
-	background: #f2f1eb;
+	background: #f8f7f7;
 	padding: 20px;
 	margin-top: 20px;
 }
@@ -194,7 +194,7 @@ a:focus {
     border-color: #b25800;
 }
 .footer-below {
-	background: #643100;
+	background: #433632;
 	color: #fff;
 	padding: 20px 0px 5px 0px;
 }

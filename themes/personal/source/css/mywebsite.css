@@ -22,6 +22,25 @@ body {
 section#blog {
     margin-bottom: 30px;
 }
+span.page-number.current {
+    padding: 5px;
+    border-bottom: 3px solid #de4e00;
+}
+a.page-number {
+    padding: 5px;
+    border-bottom: 3px solid #de4e00;
+    margin: 5px;
+}
+a.extend.next {
+    padding: 5px;
+    border-bottom: 3px solid #de4e00;
+    margin: 5px;
+}
+a.extend.prev {
+    padding: 5px;
+    border-bottom: 3px solid #de4e00;
+    margin: 5px;
+}
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: transparent;
 }
